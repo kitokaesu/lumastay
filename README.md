@@ -189,6 +189,12 @@ php -S 127.0.0.1:8088 -t .
 
 Depois abra `http://127.0.0.1:8088/`.
 
+### 6. Instalação numa VM Linux
+
+Para publicar numa máquina virtual com Apache ou Nginx, MySQL/MariaDB e Cloudflare, segue o guia dedicado:
+
+- [`docs/instalacao-vm.md`](docs/instalacao-vm.md)
+
 ---
 
 ## Dados de demonstração
@@ -381,6 +387,7 @@ Verificações efetuadas:
 - [`docs/manual-utilizacao.md`](docs/manual-utilizacao.md) — manual passo a passo para visitantes e administradores.
 - [`docs/relatorio-projeto.md`](docs/relatorio-projeto.md) — relatório técnico, arquitetura, decisões e resultados.
 - [`docs/apresentacao-projeto.md`](docs/apresentacao-projeto.md) — guião de apresentação e demonstração.
+- [`docs/instalacao-vm.md`](docs/instalacao-vm.md) — instalação numa VM Linux com Apache/Nginx, MySQL e Cloudflare.
 
 ---
 
