@@ -1,0 +1,23 @@
+# LumaStay — ficheiros ignorados
+
+# Configuração local com credenciais
+config/config.local.php
+
+# Logs e temporários
+*.log
+*.tmp
+tests/tmp/
+tests/screenshots/
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependências e artefactos que não pertencem a este projeto
+node_modules/
+vendor/

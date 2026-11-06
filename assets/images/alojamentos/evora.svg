@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Quinta alentejana caiada entre oliveiras e campos dourados">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6EEF0"/><stop offset=".6" stop-color="#EBDDBD"/><stop offset="1" stop-color="#D7B97E"/></linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D2B96B"/><stop offset="1" stop-color="#8E8A48"/></linearGradient>
+    <linearGradient id="field2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B4A454"/><stop offset="1" stop-color="#6E763D"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="930" cy="180" r="72" fill="#F6E5BD"/>
+  <path d="M0 490c220-40 380-8 560 22 190 32 340 8 640-20v308H0Z" fill="url(#field)"/>
+  <path d="M0 600c220-24 390 16 570 40 200 26 360-8 630-24v184H0Z" fill="url(#field2)"/>
+  <g stroke="#E3D7A8" stroke-width="2" opacity=".35"><path d="M0 552h1200M0 578h1200M0 640h1200M0 686h1200"/></g>
+  <g>
+    <path d="M390 640h400v120H390z" fill="#F6F2E6"/>
+    <path d="M365 640l225-110 225 110z" fill="#D9C7A5"/>
+    <path d="M455 690h75v70h-75z" fill="#896146"/>
+    <rect x="575" y="676" width="56" height="42" fill="#C49A6C"/>
+    <rect x="662" y="676" width="56" height="42" fill="#C49A6C"/>
+    <path d="M365 760h450v18H365z" fill="#5A5E38" opacity=".34"/>
+  </g>
+  <g fill="#56623D">
+    <path d="M180 690l10-120c1-14 8-24 20-24s19 10 20 24l10 120z"/>
+    <ellipse cx="200" cy="560" rx="58" ry="20"/>
+    <path d="M860 700l10-130c1-14 8-25 20-25s19 11 20 25l10 130z"/>
+    <ellipse cx="880" cy="555" rx="62" ry="21"/>
+    <path d="M1050 704l8-100c1-12 7-21 18-21s17 9 18 21l8 100z"/>
+    <ellipse cx="1066" cy="590" rx="48" ry="17"/>
+  </g>
+  <g fill="#F1E7CC" opacity=".8">
+    <path d="M1020 650c8-22 18-32 30-32s22 10 30 32z"/>
+    <path d="M240 640c7-18 15-27 25-27s18 9 25 27z"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Loft entre pinheiros e dunas na Comporta">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9EDE5"/><stop offset=".55" stop-color="#F0E2C8"/><stop offset="1" stop-color="#D6BE95"/></linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCCBA6"/><stop offset="1" stop-color="#B89D72"/></linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9BC7C0"/><stop offset="1" stop-color="#3C8884"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="260" cy="180" r="68" fill="#F6E4BF"/>
+  <path d="M0 450c220-50 380-16 560 24 190 42 340 10 640-30v356H0Z" fill="url(#sand)"/>
+  <path d="M0 610c240-34 390 12 570 34 200 24 360-16 630-38v194H0Z" fill="#C4AA7B"/>
+  <g fill="#4C6145">
+    <path d="M120 620l12-190c1-18 10-30 26-30s25 12 26 30l12 190z"/>
+    <path d="M200 635l9-150c1-15 8-25 21-25s20 10 21 25l9 150z"/>
+    <path d="M300 630l10-170c1-16 9-28 24-28s23 12 24 28l10 170z"/>
+    <ellipse cx="158" cy="410" rx="78" ry="27"/>
+    <ellipse cx="230" cy="470" rx="58" ry="21"/>
+    <ellipse cx="334" cy="440" rx="70" ry="25"/>
+  </g>
+  <g>
+    <path d="M610 590h340v160H610z" fill="#F5F0E4"/>
+    <path d="M590 590l190-96 190 96z" fill="#5B5A4C"/>
+    <path d="M660 630h96v120h-96z" fill="#355B55"/>
+    <rect x="798" y="630" width="72" height="48" fill="#C49A6C"/>
+    <rect x="886" y="630" width="48" height="48" fill="#C49A6C"/>
+    <path d="M590 750h380v16H590z" fill="#736648" opacity=".3"/>
+  </g>
+  <g>
+    <rect x="400" y="700" width="300" height="40" rx="20" fill="url(#pool)"/>
+    <path d="M420 716c36-7 72 7 108 0s72-7 108 0" stroke="#DDF1EC" stroke-width="3" fill="none" opacity=".65"/>
+  </g>
+  <g fill="#7D8C5C" opacity=".85">
+    <path d="M1010 690l12-180c1-16 9-28 25-28s24 12 25 28l12 180z"/>
+    <path d="M1080 704l9-130c1-14 8-24 20-24s19 10 20 24l9 130z"/>
+    <ellipse cx="1047" cy="480" rx="70" ry="25"/>
+  </g>
+  <g stroke="#E8DCC0" stroke-width="2" opacity=".28"><path d="M0 590h1200M0 650h1200M0 718h1200"/></g>
+</svg>

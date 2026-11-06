@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Casa de pedra na floresta de Sintra com neblina">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DDE3DA"/><stop offset=".6" stop-color="#C5CFC1"/><stop offset="1" stop-color="#9DAC9B"/></linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F3F2EA" stop-opacity=".7"/><stop offset="1" stop-color="#F3F2EA" stop-opacity="0"/></linearGradient>
+    <linearGradient id="forest" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#496553"/><stop offset="1" stop-color="#1D3833"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <path d="M0 540c180-90 300-70 460-20 150 48 280 38 450-22 120-42 210-48 290-16v318H0Z" fill="url(#forest)" opacity=".55"/>
+  <g fill="#8B9B8B" opacity=".6">
+    <path d="M760 420l46-190 46 190z"/><path d="M806 230h24v-50h-24zM820 180h60v30h-60z"/>
+    <path d="M900 450l38-150 38 150z"/><path d="M938 300h18v-42h-18z"/>
+  </g>
+  <rect y="400" width="1200" height="180" fill="url(#fog)"/>
+  <g fill="#2C4A40">
+    <path d="M120 690l18-210c2-18 14-32 32-32s30 14 32 32l18 210z"/>
+    <path d="M240 700l12-150c2-14 10-24 24-24s22 10 24 24l12 150z"/>
+    <path d="M330 700l16-180c2-16 12-28 28-28s26 12 28 28l16 180z"/>
+    <ellipse cx="170" cy="470" rx="86" ry="30"/>
+    <ellipse cx="276" cy="530" rx="62" ry="23"/>
+    <ellipse cx="374" cy="500" rx="76" ry="27"/>
+  </g>
+  <g>
+    <path d="M640 640h310v110H640z" fill="#B9B3A6"/>
+    <path d="M620 640l175-100 175 100z" fill="#4C4A43"/>
+    <path d="M700 680h70v70h-70z" fill="#7B5C43"/>
+    <rect x="808" y="676" width="60" height="42" fill="#D9B77E"/>
+    <rect x="886" y="676" width="40" height="42" fill="#D9B77E"/>
+    <path d="M620 750h350v18H620z" fill="#1E3832" opacity=".4"/>
+  </g>
+  <g fill="#234137" opacity=".85">
+    <path d="M1020 710l14-180c2-16 11-28 27-28s25 12 27 28l14 180z"/>
+    <path d="M1080 718l10-120c1-13 9-22 21-22s20 9 21 22l10 120z"/>
+    <ellipse cx="1060" cy="520" rx="70" ry="24"/>
+  </g>
+</svg>

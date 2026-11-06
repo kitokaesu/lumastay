@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="LumaStay">
+  <rect width="48" height="48" rx="12" fill="#183A3A"/>
+  <path d="M11 35V22.5L24 11l13 11.5V35" fill="none" stroke="#FAF9F6" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M18 35v-8.5h12V35" fill="none" stroke="#FAF9F6" stroke-width="1.7" stroke-linejoin="round"/>
+  <circle cx="24" cy="20" r="4.2" fill="#C49A6C"/>
+  <path d="M11 35h26" stroke="#C49A6C" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

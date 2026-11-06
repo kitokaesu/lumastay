@@ -1,0 +1,1396 @@
+/* ============================================================
+   LumaStay — responsividade
+   Ordem descendente de largura para manter a cascata previsível.
+   ============================================================ */
+
+@media (max-width: 1180px) {
+    .section {
+        padding: 76px 0;
+    }
+
+    .header-inner {
+        gap: 22px;
+    }
+
+    .primary-nav {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 700px;
+        padding-top: 92px;
+    }
+
+    .search-panel {
+        grid-template-columns: 1.4fr 1fr 1fr auto;
+    }
+
+    .search-field:nth-of-type(4) {
+        display: none;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .destination-card-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .stay-grid {
+        gap: 22px;
+    }
+
+    .about-grid {
+        gap: 56px;
+    }
+
+    .advantage-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .listings-layout {
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .detail-layout {
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 38px;
+    }
+
+    .booking-layout,
+    .confirmation-layout {
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 32px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1.5fr 1fr 1fr 1.1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: min(100% - 40px, var(--container));
+    }
+
+    /* Navegação pública em gaveta */
+    .nav-toggle {
+        display: grid;
+    }
+
+    .primary-nav {
+        position: fixed;
+        top: 78px;
+        right: 16px;
+        left: 16px;
+        z-index: 45;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        max-height: calc(100vh - 110px);
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--cream);
+        box-shadow: var(--shadow-md);
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity var(--transition), transform var(--transition);
+    }
+
+    .primary-nav.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        padding: 12px 10px;
+        border-radius: 9px;
+        font-size: 0.92rem;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.is-active {
+        background: var(--cream-deep);
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        margin: 10px 0 0;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+    }
+
+    .nav-actions .btn {
+        width: 100%;
+    }
+
+    .nav-login-link,
+    .nav-admin-link {
+        padding: 12px 10px;
+    }
+
+    .nav-logout-form {
+        display: block;
+    }
+
+    .nav-logout-button {
+        width: 100%;
+        padding: 12px 10px;
+        text-align: left;
+    }
+
+    .nav-toggle-open {
+        display: block;
+    }
+
+    .nav-toggle-close {
+        display: none;
+    }
+
+    .nav-toggle[aria-expanded="true"] .nav-toggle-open {
+        display: none;
+    }
+
+    .nav-toggle[aria-expanded="true"] .nav-toggle-close {
+        display: block;
+    }
+
+    body.nav-open {
+        overflow: hidden;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 78px 0 58px;
+    }
+
+    .hero-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: min(100% - 40px, var(--container));
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 7vw, 4.4rem);
+    }
+
+    .search-panel-wrap {
+        margin-top: 44px;
+    }
+
+    .search-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-field:nth-of-type(4) {
+        display: flex;
+    }
+
+    .search-submit {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .stay-grid,
+    .stay-grid-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about-visual {
+        min-height: 460px;
+        max-width: 620px;
+    }
+
+    .about-image-main {
+        height: 430px;
+    }
+
+    .about-image-small {
+        height: 230px;
+    }
+
+    .section-about .about-copy {
+        order: 2;
+    }
+
+    .cta-band-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 34px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .page-banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .page-banner-stat {
+        align-items: flex-start;
+        padding: 0;
+        border-left: 0;
+    }
+
+    .page-banner-stat span {
+        text-align: left;
+    }
+
+    .listings-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .filter-panel {
+        position: static;
+    }
+
+    .filter-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 16px;
+    }
+
+    .filter-form .price-fieldset,
+    .filter-form .btn {
+        grid-column: 1 / -1;
+    }
+
+    .filter-form .form-field {
+        margin-bottom: 13px;
+    }
+
+    .filter-note {
+        display: none;
+    }
+
+    .detail-layout,
+    .booking-layout,
+    .confirmation-layout,
+    .consult-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .booking-card,
+    .booking-summary,
+    .consult-form-panel {
+        position: static;
+    }
+
+    .booking-card {
+        order: -1;
+    }
+
+    .detail-main {
+        order: 2;
+    }
+
+    .detail-facts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-columns {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .reservation-card {
+        grid-template-columns: 190px minmax(0, 1fr);
+    }
+
+    .booking-chooser-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-help-panel img {
+        width: calc(100% + 68px);
+        max-width: none;
+    }
+
+    .login-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .login-visual {
+        min-height: 320px;
+        padding: 34px;
+    }
+
+    .login-panel {
+        padding: 38px 34px;
+    }
+
+    .consult-hint-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .confirmation-aside {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+@media (max-width: 900px) {
+    .section {
+        padding: 64px 0;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .section-heading-centered {
+        align-items: center;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 210px;
+    }
+
+    .destination-card-large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .destination-card-large .destination-content h3 {
+        font-size: 1.9rem;
+    }
+
+    .hero-stats {
+        margin-top: 40px;
+    }
+
+    .hero-stats > div {
+        padding: 0 20px;
+    }
+
+    .hero-stats dt {
+        font-size: 1.65rem;
+    }
+
+    .hero-stats dd {
+        font-size: 0.68rem;
+    }
+
+    .confirmation-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consult-layout {
+        gap: 28px;
+    }
+
+    .consult-form-panel {
+        order: -1;
+    }
+
+    .consult-hint-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .consult-hint-grid > div {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reservation-card {
+        grid-template-columns: 150px minmax(0, 1fr);
+    }
+
+    .reservation-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .confirmation-aside {
+        grid-template-columns: 1fr;
+    }
+
+    /* Administração: gaveta lateral */
+    .admin-sidebar {
+        transform: translateX(-100%);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .admin-shell.sidebar-open .admin-sidebar {
+        transform: translateX(0);
+    }
+
+    .admin-main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .admin-menu-toggle {
+        display: grid;
+    }
+
+    .admin-topbar {
+        padding: 12px 22px;
+        min-height: 70px;
+    }
+
+    .admin-content {
+        padding: 24px 22px 44px;
+    }
+
+    .admin-user-info {
+        display: none;
+    }
+
+    .form-grid-three {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .header-inner {
+        min-height: 70px;
+    }
+
+    .primary-nav {
+        top: 70px;
+    }
+
+    .brand-wordmark {
+        font-size: 1.35rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.35rem, 8.4vw, 3.4rem);
+    }
+
+    .hero-lead {
+        font-size: 0.96rem;
+    }
+
+    .hero-actions {
+        gap: 16px;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: 18px 0;
+    }
+
+    .hero-stats > div {
+        width: 50%;
+        padding: 0 14px;
+    }
+
+    .hero-stats > div:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .search-panel {
+        grid-template-columns: 1fr;
+        padding: 14px;
+    }
+
+    .search-panel .search-submit {
+        grid-column: auto;
+    }
+
+    .stay-grid,
+    .stay-grid-list {
+        grid-template-columns: 1fr;
+    }
+
+    .stay-grid-list .stay-card-media {
+        aspect-ratio: 4 / 3;
+    }
+
+    .about-visual {
+        min-height: 380px;
+    }
+
+    .about-image-main {
+        height: 350px;
+        width: 100%;
+    }
+
+    .about-image-small {
+        display: none;
+    }
+
+    .about-stamp {
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .section-about .about-copy {
+        order: 0;
+    }
+
+    .advantage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+
+    .destination-card-large {
+        grid-column: auto;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .detail-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .detail-heading-price {
+        padding-left: 0;
+        border-left: 0;
+        text-align: left;
+    }
+
+    .detail-heading-price span,
+    .detail-heading-price strong,
+    .detail-heading-price small {
+        display: inline;
+    }
+
+    .detail-heading-price strong {
+        margin: 0 5px;
+        font-size: 1.5rem;
+    }
+
+    .detail-gallery img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .detail-gallery figcaption {
+        display: none;
+    }
+
+    .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .detail-facts {
+        grid-template-columns: 1fr 1fr;
+        padding: 18px;
+    }
+
+    .booking-dates {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .results-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .sort-form {
+        width: 100%;
+    }
+
+    .sort-form select {
+        flex: 1;
+    }
+
+    .booking-form-panel {
+        padding: 22px;
+    }
+
+    .booking-form-head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .booking-chooser-panel,
+    .booking-help-panel {
+        padding: 24px;
+    }
+
+    .booking-help-panel img {
+        width: calc(100% + 48px);
+        margin: -24px -24px 20px;
+        height: 140px;
+    }
+
+    .reservation-card {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-card-media {
+        height: 180px;
+    }
+
+    .reservation-card-media img {
+        height: 180px;
+    }
+
+    .reservation-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .confirmation-card {
+        padding: 22px;
+    }
+
+    .confirmation-card-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .confirmation-card-head img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .confirmation-details {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .confirmation-actions {
+        flex-direction: column;
+    }
+
+    .confirmation-actions .btn {
+        width: 100%;
+    }
+
+    .confirmation-code {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .login-section {
+        padding: 30px 0 60px;
+    }
+
+    .login-visual {
+        min-height: 260px;
+        padding: 26px;
+    }
+
+    .login-visual-content ul {
+        display: none;
+    }
+
+    .login-panel {
+        padding: 28px 22px;
+    }
+
+    .login-panel-head h1 {
+        font-size: 2.3rem;
+    }
+
+    /* Administração */
+    .admin-topbar-title h1 {
+        font-size: 1.18rem;
+    }
+
+    .admin-content {
+        padding: 20px 16px 40px;
+    }
+
+    .admin-page-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .admin-intro-actions {
+        width: 100%;
+    }
+
+    .stat-grid,
+    .stat-mini-grid,
+    .status-summary-grid,
+    .availability-summary-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dashboard-grid,
+    .dashboard-grid-lists {
+        grid-template-columns: 1fr;
+    }
+
+    .bar-chart {
+        height: 190px;
+        gap: 7px;
+    }
+
+    .timeline-list .badge {
+        display: none;
+    }
+
+    .admin-filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-filter-form .form-field,
+    .admin-search-field,
+    .availability-filter .form-field {
+        flex: 1 1 auto !important;
+        min-width: 0;
+    }
+
+    .admin-filter-actions {
+        width: 100%;
+    }
+
+    .admin-filter-actions .btn {
+        flex: 1;
+    }
+
+    .form-grid,
+    .form-grid-three {
+        grid-template-columns: 1fr;
+    }
+
+    .guest-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-stay-grid {
+        flex-wrap: wrap;
+    }
+
+    .reservation-date-arrow {
+        display: none;
+    }
+
+    .reservation-date-box {
+        flex: 1 1 120px;
+    }
+
+    .reservation-night-box {
+        flex: 0 0 100%;
+        flex-direction: row;
+        gap: 6px;
+        justify-content: center;
+        padding: 7px;
+    }
+
+    .reservation-night-box span {
+        margin-top: 0;
+    }
+
+    .reservation-accommodation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reservation-accommodation img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .calendar-head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .calendar-day {
+        min-height: 50px;
+        padding: 4px;
+    }
+
+    .calendar-event {
+        font-size: 0.5rem;
+    }
+
+    .guest-profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .detail-admin-side {
+        position: static;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        width: min(100% - 32px, var(--container));
+    }
+
+    .section {
+        padding: 54px 0;
+    }
+
+    h1 {
+        font-size: clamp(2.1rem, 9vw, 2.8rem);
+    }
+
+    h2 {
+        font-size: clamp(1.65rem, 6.4vw, 2.2rem);
+    }
+
+    .page-banner {
+        padding: 26px 0 38px;
+    }
+
+    .page-banner h1 {
+        font-size: clamp(1.9rem, 7.4vw, 2.5rem);
+    }
+
+    .page-banner-icon {
+        display: none;
+    }
+
+    .booking-progress {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .booking-progress span {
+        padding: 0 10px;
+        font-size: 0.64rem;
+    }
+
+    .hero {
+        padding: 58px 0 48px;
+    }
+
+    .hero h1 {
+        letter-spacing: -0.03em;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-secondary-link {
+        display: inline-block;
+    }
+
+    .hero-stats > div {
+        width: 100%;
+        padding: 0;
+        border-left: 0;
+    }
+
+    .hero-stats > div + div {
+        padding-top: 12px;
+        border-top: 1px solid rgba(250, 249, 246, 0.16);
+    }
+
+    .search-panel-wrap {
+        margin-top: 32px;
+    }
+
+    .cta-band {
+        padding: 56px 0;
+    }
+
+    .cta-band .btn {
+        width: 100%;
+    }
+
+    .about-visual {
+        min-height: 300px;
+    }
+
+    .about-image-main {
+        height: 280px;
+    }
+
+    .about-copy h2 {
+        margin-bottom: 16px;
+    }
+
+    .about-lead {
+        font-size: 1.1rem;
+    }
+
+    .footer-main {
+        padding-bottom: 40px;
+    }
+
+    .site-footer {
+        padding-top: 52px;
+    }
+
+    .detail-heading-meta {
+        gap: 8px;
+        font-size: 0.75rem;
+    }
+
+    .detail-separator {
+        display: none;
+    }
+
+    .detail-section {
+        padding-top: 38px;
+    }
+
+    .detail-block {
+        padding-bottom: 28px;
+        margin-bottom: 28px;
+    }
+
+    .detail-block h2 {
+        font-size: 1.55rem;
+    }
+
+    .booking-card {
+        padding: 20px;
+    }
+
+    .pagination-link {
+        min-width: 34px;
+        height: 34px;
+    }
+
+    .empty-state {
+        padding: 40px 20px;
+    }
+
+    .empty-state-large {
+        padding: 56px 20px;
+    }
+
+    .booking-form-panel,
+    .booking-summary-body,
+    .consult-form-panel {
+        padding: 20px;
+    }
+
+    .form-section legend {
+        font-size: 1.1rem;
+    }
+
+    .reservation-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .login-visual-badge {
+        display: none;
+    }
+
+    .login-shell {
+        border-radius: var(--radius);
+    }
+
+    /* Administração */
+    .admin-topbar .admin-eyebrow {
+        display: none;
+    }
+
+    .admin-topbar {
+        padding: 10px 14px;
+        gap: 12px;
+    }
+
+    .admin-avatar {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+    }
+
+    .stat-grid,
+    .stat-mini-grid,
+    .status-summary-grid,
+    .availability-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-stat {
+        padding: 12px 14px;
+    }
+
+    .stat-value {
+        font-size: 1.6rem;
+    }
+
+    .admin-card {
+        padding: 18px;
+    }
+
+    .admin-table-card {
+        padding: 0;
+    }
+
+    .admin-table-card > .admin-card-head {
+        padding: 18px 16px 0;
+    }
+
+    .admin-pagination {
+        padding: 14px 16px 18px;
+        justify-content: center;
+    }
+
+    .bar-chart {
+        height: 160px;
+    }
+
+    .bar-chart-value {
+        display: none;
+    }
+
+    .reservation-hero-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reservation-hero-code {
+        font-size: 1.25rem;
+    }
+
+    .status-track-step small {
+        font-size: 0.6rem;
+    }
+
+    .calendar-card {
+        padding: 16px;
+    }
+
+    .calendar-weekdays span {
+        font-size: 0.55rem;
+    }
+
+    .calendar-day {
+        min-height: 44px;
+        border-radius: 6px;
+    }
+
+    .calendar-day-number {
+        font-size: 0.65rem;
+    }
+
+    .calendar-event {
+        display: none;
+    }
+
+    .calendar-day-checkout::after,
+    .calendar-day-booked::after,
+    .calendar-day-pending::after {
+        width: 5px;
+        height: 5px;
+        margin-top: auto;
+        border-radius: 50%;
+        background: currentColor;
+        content: "";
+    }
+
+    .calendar-day-booked::after { color: var(--success); }
+    .calendar-day-pending::after { color: #D9A93F; }
+    .calendar-day-checkout::after { color: var(--gold); }
+
+    .calendar-legend {
+        gap: 10px;
+        font-size: 0.62rem;
+    }
+
+    .form-card {
+        padding: 18px;
+    }
+
+    .status-track-cancelled {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 26px, var(--container));
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+    }
+
+    .brand-wordmark {
+        font-size: 1.2rem;
+    }
+
+    .header-inner {
+        gap: 12px;
+    }
+
+    .nav-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn {
+        padding: 11px 18px;
+        font-size: 0.86rem;
+    }
+
+    .btn-small {
+        padding: 8px 13px;
+    }
+
+    .section-heading {
+        margin-bottom: 26px;
+    }
+
+    .stay-card-body {
+        padding: 18px;
+    }
+
+    .stay-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .destination-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .detail-gallery-type {
+        top: 12px;
+        left: 12px;
+    }
+
+    .detail-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-dates,
+    .price-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-details {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-code-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .confirmation-hero h1 {
+        font-size: 2rem;
+    }
+
+    .login-panel {
+        padding: 24px 18px;
+    }
+
+    .demo-credentials {
+        font-size: 0.71rem;
+    }
+
+    .admin-topbar-title h1 {
+        font-size: 1.05rem;
+    }
+
+    .admin-user {
+        display: none;
+    }
+
+    .admin-content {
+        padding: 16px 12px 34px;
+    }
+
+    .admin-card {
+        padding: 15px;
+    }
+
+    .admin-page-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .admin-intro-actions .btn {
+        flex: 1;
+    }
+
+    .timeline-list li {
+        gap: 10px;
+    }
+
+    .timeline-date {
+        width: 38px;
+        height: 40px;
+        font-size: 0.92rem;
+    }
+
+    .timeline-list .icon-link {
+        display: none;
+    }
+
+    .reservation-status-track {
+        gap: 0;
+    }
+
+    .status-track-step small {
+        font-size: 0.54rem;
+    }
+
+    .status-track-step > span {
+        width: 26px;
+        height: 26px;
+    }
+
+    .reservation-stay-grid {
+        padding: 14px;
+    }
+
+    .calendar-card {
+        padding: 12px;
+    }
+
+    .calendar-grid,
+    .calendar-weekdays {
+        gap: 3px;
+    }
+
+    .calendar-day {
+        min-height: 38px;
+        padding: 3px;
+    }
+
+    .calendar-day-number {
+        font-size: 0.6rem;
+    }
+
+    .guest-profile-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .filter-card {
+        padding: 14px;
+    }
+
+    .admin-form-side .btn,
+    .admin-action-stack .btn {
+        width: 100%;
+    }
+
+    .guest-cell,
+    .table-property {
+        min-width: 150px;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Altura reduzida / orientação
+   ------------------------------------------------------------------ */
+
+@media (max-height: 640px) and (max-width: 1024px) {
+    .primary-nav {
+        max-height: calc(100vh - 90px);
+    }
+}
+
+/* ------------------------------------------------------------------
+   Impressão
+   ------------------------------------------------------------------ */
+
+@media print {
+    .site-header,
+    .site-footer,
+    .nav-toggle,
+    .primary-nav,
+    .admin-sidebar,
+    .admin-topbar,
+    .admin-overlay,
+    .flash-stack,
+    .booking-card,
+    .filter-panel,
+    .pagination,
+    .admin-intro-actions,
+    .row-actions,
+    .admin-action-stack {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 11pt;
+    }
+
+    .admin-main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .admin-content {
+        padding: 0;
+    }
+
+    .admin-card,
+    .stat-card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .confirmation-section,
+    .section {
+        padding: 0;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}

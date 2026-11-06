@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Telhados de Alfama e o rio Tejo ao entardecer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F4E5D0"/><stop offset=".55" stop-color="#E7BE96"/><stop offset="1" stop-color="#C98663"/></linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#71918A"/><stop offset="1" stop-color="#2D5551"/></linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C47855"/><stop offset="1" stop-color="#8C4B38"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".8" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="900" cy="210" r="150" fill="#F7D9AE" opacity=".45"/>
+  <circle cx="900" cy="210" r="48" fill="#F9E3BD"/>
+  <path d="M0 460c180-40 300-20 470 10s300 20 470-15 200-10 260 5v340H0Z" fill="url(#river)" opacity=".9"/>
+  <path d="M0 500c180-20 330 3 500 14 170 12 330-8 700-25v311H0Z" fill="#234B45"/>
+  <g opacity=".9">
+    <path d="M0 800V530l130-28 120 24v274z" fill="#EADCC8"/>
+    <path d="M0 530l70-58 60 30 60-50 60 78z" fill="url(#roof)"/>
+    <path d="M150 800V500l160-24 150 34v290z" fill="#DFC8AE"/>
+    <path d="M140 500l170-84 160 84z" fill="#A85F45"/>
+    <path d="M320 800V540l180-30 170 38v252z" fill="#E8D4BC"/>
+    <path d="M310 540l190-88 180 88z" fill="url(#roof)"/>
+    <path d="M560 800V580l150-26 150 28v218z" fill="#D8BEA4"/>
+    <path d="M550 580l160-76 160 76z" fill="#9D563E"/>
+    <path d="M760 800V610l170-22 150 30v182z" fill="#E4CEB5"/>
+    <path d="M750 610l180-72 160 72z" fill="#B96B4B"/>
+  </g>
+  <g fill="#F4D9A9">
+    <rect x="70" y="600" width="18" height="26"/><rect x="210" y="570" width="22" height="32"/><rect x="286" y="588" width="18" height="28"/>
+    <rect x="390" y="620" width="24" height="32"/><rect x="456" y="586" width="18" height="28"/><rect x="622" y="640" width="22" height="30"/>
+    <rect x="700" y="610" width="18" height="28"/><rect x="860" y="660" width="24" height="32"/><rect x="968" y="628" width="18" height="28"/>
+  </g>
+  <g fill="#183A3A" opacity=".82">
+    <path d="M1010 540l24-160c2-16 13-28 29-28s27 12 29 28l24 160z"/>
+    <path d="M1072 548l18-118c2-13 11-23 25-23s23 10 25 23l18 118z"/>
+  </g>
+  <path d="M1120 380v-34h60v34M1112 380h76" stroke="#183A3A" stroke-width="8" fill="none"/>
+</svg>

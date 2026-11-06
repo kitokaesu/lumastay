@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Imagem indisponível">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAE4D9"/>
+      <stop offset="1" stop-color="#D8D0C2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="930" cy="180" r="90" fill="#C49A6C" opacity=".35"/>
+  <path d="M250 600V410l180-140 180 140v190" fill="none" stroke="#234B45" stroke-width="10" stroke-linejoin="round" opacity=".55"/>
+  <path d="M380 600V490h100v110M250 600h360" fill="none" stroke="#234B45" stroke-width="8" stroke-linejoin="round" opacity=".45"/>
+  <path d="M720 600c80-90 150-90 230 0" fill="none" stroke="#234B45" stroke-width="7" opacity=".3"/>
+  <text x="600" y="690" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#234B45" opacity=".65">LumaStay</text>
+</svg>

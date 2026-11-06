@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Suite com varanda sobre o oceano Atlântico na Madeira">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E8D9CC"/><stop offset=".5" stop-color="#E8C5A3"/><stop offset="1" stop-color="#CE9274"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7C9C96"/><stop offset="1" stop-color="#24504D"/></linearGradient>
+    <linearGradient id="cliff" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6D6B58"/><stop offset="1" stop-color="#39483D"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".85" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="870" cy="235" r="160" fill="#F3CFA7" opacity=".38"/>
+  <circle cx="870" cy="235" r="50" fill="#F8DFBA"/>
+  <rect y="340" width="1200" height="460" fill="url(#sea)"/>
+  <g stroke="#CFE0D8" stroke-width="2" opacity=".35"><path d="M0 400h240M340 440h160M600 390h220M900 460h180M120 520h220M700 560h240"/></g>
+  <path d="M0 390c130-58 250-42 370 12 110 50 210 36 320-18 110-54 210-42 510 2v414H0Z" fill="#3F5B4A" opacity=".5"/>
+  <path d="M0 520c160-80 280-54 400 8 110 56 210 32 330-24 130-60 230-50 470 12v284H0Z" fill="url(#cliff)"/>
+  <g>
+    <path d="M220 575h480v160H220z" fill="#F3EBDD"/>
+    <path d="M200 575l260-126 260 126z" fill="#5A5044"/>
+    <path d="M280 610h110v80H280z" fill="#385C56"/>
+    <rect x="430" y="610" width="70" height="46" fill="#C49A6C"/>
+    <rect x="530" y="610" width="70" height="46" fill="#C49A6C"/>
+    <path d="M240 735h460v14H240z" fill="#2F4035"/>
+    <path d="M700 735h210v14H700z" fill="#344438"/>
+    <path d="M740 735v-90M870 735v-90M740 690h130" stroke="#EDE4D4" stroke-width="7" fill="none"/>
+    <path d="M760 645c30-22 60-22 90 0" stroke="#EDE4D4" stroke-width="4" fill="none"/>
+  </g>
+  <g fill="#263F35" opacity=".9">
+    <path d="M80 680l14-160c2-16 11-28 27-28s25 12 27 28l14 160z"/>
+    <path d="M150 700l10-120c1-13 8-22 20-22s19 9 20 22l10 120z"/>
+    <ellipse cx="121" cy="490" rx="64" ry="22"/>
+  </g>
+</svg>

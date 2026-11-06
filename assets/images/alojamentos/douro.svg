@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Socalcos de vinha e quinta junto ao rio Douro">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9E4D4"/><stop offset=".55" stop-color="#D9CBA9"/><stop offset="1" stop-color="#B99C6F"/></linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#829B8D"/><stop offset="1" stop-color="#365C55"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8C8B62"/><stop offset="1" stop-color="#4F5A42"/></linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6E7654"/><stop offset="1" stop-color="#354A3C"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="280" cy="180" r="100" fill="#F4E3BE" opacity=".55"/>
+  <circle cx="280" cy="180" r="38" fill="#F6E8C9"/>
+  <path d="M0 420c220-84 340-42 520 30 150 60 250 34 390-20 110-43 210-49 290-16v386H0Z" fill="url(#hill)" opacity=".8"/>
+  <path d="M0 520c220-60 360-12 540 50 160 55 290 30 430-22 90-34 170-32 230-4v256H0Z" fill="url(#hill2)"/>
+  <path d="M0 630c180-26 330 22 500 46 210 30 360-16 700-50v174H0Z" fill="url(#river)" opacity=".9"/>
+  <g stroke="#D7C8A4" stroke-width="2" opacity=".45" fill="none">
+    <path d="M0 462c240-65 360-16 530 42 170 58 300 26 440-22 100-34 170-34 230-10"/>
+    <path d="M0 490c240-58 360-8 530 48 170 56 300 24 440-22 100-32 170-32 230-10"/>
+    <path d="M0 546c220-45 350 7 520 52 170 45 310 22 440-20 100-32 160-34 240-14"/>
+    <path d="M0 572c220-38 350 14 520 58 170 44 310 20 440-18 100-30 160-32 240-12"/>
+  </g>
+  <g fill="#2D453C">
+    <path d="M770 595l10-115c1-14 11-25 25-25s24 11 25 25l10 115z"/>
+    <path d="M820 602l8-90c1-12 8-21 20-21s19 9 20 21l8 90z"/>
+    <ellipse cx="795" cy="470" rx="44" ry="16"/>
+    <ellipse cx="842" cy="492" rx="34" ry="13"/>
+  </g>
+  <g>
+    <path d="M860 610h230v122H860z" fill="#EDE6D7"/>
+    <path d="M840 610l135-72 135 72z" fill="#7F4C38"/>
+    <path d="M905 646h48v86h-48z" fill="#8D6A4D"/>
+    <rect x="977" y="660" width="34" height="28" fill="#C49A6C"/>
+    <rect x="1035" y="660" width="30" height="28" fill="#C49A6C"/>
+    <path d="M840 732h250v18H840z" fill="#31483E" opacity=".35"/>
+  </g>
+  <g stroke="#EAE4D9" stroke-width="2" opacity=".25"><path d="M180 690h80M260 710h90M520 704h70M1080 696h70"/></g>
+</svg>

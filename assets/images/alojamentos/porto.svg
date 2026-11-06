@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Casas da Ribeira do Porto e ponte sobre o rio Douro">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6E3D8"/><stop offset=".6" stop-color="#D8C6B0"/><stop offset="1" stop-color="#BFA28A"/></linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6D8B86"/><stop offset="1" stop-color="#284D49"/></linearGradient>
+    <linearGradient id="facade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EBD9C0"/><stop offset="1" stop-color="#C7A882"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".85" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="220" cy="180" r="80" fill="#F3DEC0" opacity=".6"/>
+  <path d="M0 520c180-18 320 14 500 22 200 8 360-22 700-28v286H0Z" fill="url(#river)"/>
+  <g>
+    <path d="M690 250c90-100 330-100 420 0" stroke="#3E4742" stroke-width="10" fill="none"/>
+    <path d="M700 320c90-74 310-74 400 0" stroke="#3E4742" stroke-width="8" fill="none"/>
+    <path d="M690 250v240M1110 250v240M700 320v170M1100 320v170" stroke="#3E4742" stroke-width="7"/>
+    <path d="M690 490h420M700 430h400" stroke="#3E4742" stroke-width="6"/>
+  </g>
+  <g>
+    <path d="M0 800V480l120-20 100 24v316z" fill="#D9C0A0"/>
+    <path d="M0 480l60-56 60 26 50-42 50 72z" fill="#8B4D3B"/>
+    <path d="M100 800V520l130-20 110 22v278z" fill="#E7CFB2"/>
+    <path d="M90 520l140-70 130 70z" fill="#A35C42"/>
+    <path d="M230 800V550l150-18 140 20v248z" fill="#D4B491"/>
+    <path d="M220 550l160-76 150 76z" fill="#7E4638"/>
+    <path d="M440 800V590l130-16 120 18v208z" fill="#E3C8A9"/>
+    <path d="M430 590l140-66 130 66z" fill="#9A543F"/>
+  </g>
+  <g fill="#F3D9A8">
+    <rect x="40" y="550" width="26" height="38"/><rect x="150" y="600" width="26" height="38"/><rect x="290" y="620" width="26" height="38"/>
+    <rect x="380" y="610" width="26" height="38"/><rect x="500" y="650" width="26" height="38"/><rect x="600" y="640" width="26" height="38"/>
+  </g>
+  <g fill="#173733" opacity=".88">
+    <path d="M840 640l10-140c1-14 10-24 24-24s23 10 24 24l10 140z"/>
+    <path d="M900 650l8-100c1-12 8-21 20-21s19 9 20 21l8 100z"/>
+    <ellipse cx="880" cy="500" rx="52" ry="19"/>
+  </g>
+  <path d="M0 760c180-16 340 6 520 12 200 6 380-14 680-24v52H0Z" fill="#E8E1D2" opacity=".18"/>
+</svg>

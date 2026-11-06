@@ -1,0 +1,23 @@
+<?php
+/**
+ * LumaStay — configuração local (exemplo).
+ *
+ * Copie este ficheiro para config/config.local.php e ajuste os valores.
+ * O ficheiro config/config.local.php não deve ser versionado.
+ *
+ * As variáveis de ambiente (DB_HOST, DB_PORT, DB_NAME, DB_USER,
+ * DB_PASSWORD, APP_ENV, APP_URL) têm prioridade sobre este ficheiro.
+ */
+
+return [
+    'app_env'    => 'local',
+    'app_url'    => '',           // Ex.: 'http://localhost/lumastay' ou '' para deteção automática.
+    'timezone'   => 'Europe/Lisbon',
+
+    'db_host'     => '127.0.0.1',
+    'db_port'     => '3306',
+    'db_name'     => 'lumastay',
+    'db_user'     => 'root',
+    'db_password' => '',
+    'db_charset'  => 'utf8mb4',
+];

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Villa branca com piscina sobre falésias do Algarve">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DDE8E4"/><stop offset=".55" stop-color="#F0E0C9"/><stop offset="1" stop-color="#E8C69E"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4E807F"/><stop offset="1" stop-color="#1F4B49"/></linearGradient>
+    <linearGradient id="cliff" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D7C1A0"/><stop offset="1" stop-color="#9F7E5E"/></linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EC2BC"/><stop offset="1" stop-color="#3D8D8A"/></linearGradient>
+    <filter id="g"><feTurbulence baseFrequency=".85" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="980" cy="165" r="62" fill="#F5DDB7"/>
+  <rect y="375" width="1200" height="250" fill="url(#sea)"/>
+  <g stroke="#D6E4DD" stroke-width="2" opacity=".4"><path d="M0 430h180M250 468h150M520 425h220M790 480h170M1040 440h160M120 520h200M660 535h180"/></g>
+  <path d="M0 500c180-26 330 36 500 50 200 16 330-40 700-24v274H0Z" fill="url(#cliff)"/>
+  <path d="M0 610c200-38 370 18 540 38 190 22 330-28 660-24v176H0Z" fill="#8B6B4D"/>
+  <g>
+    <path d="M265 575h420v145H265z" fill="#F8F4EA"/>
+    <path d="M245 575l230-94 230 94z" fill="#E7DECD"/>
+    <path d="M310 615h82v105h-82z" fill="#355C56"/>
+    <rect x="430" y="615" width="90" height="52" fill="#C49A6C" opacity=".85"/>
+    <rect x="555" y="615" width="90" height="52" fill="#C49A6C" opacity=".7"/>
+    <path d="M245 720h460v22H245z" fill="#6F5742" opacity=".3"/>
+    <path d="M700 720c0-44 36-80 80-80s80 36 80 80z" fill="#25504B"/>
+    <path d="M780 640v80" stroke="#F8F4EA" stroke-width="7"/>
+    <path d="M742 670c22-14 48-14 76 0" stroke="#F8F4EA" stroke-width="5" fill="none"/>
+  </g>
+  <g>
+    <rect x="337" y="732" width="315" height="42" rx="21" fill="url(#pool)"/>
+    <path d="M355 748c40-8 80 8 120 0s80-8 120 0" stroke="#DDF2EE" stroke-width="3" fill="none" opacity=".7"/>
+  </g>
+  <g fill="#435E4C" opacity=".9">
+    <path d="M150 690l16-120c2-14 10-24 24-24s22 10 24 24l16 120z"/>
+    <path d="M210 700l12-90c1-12 8-20 20-20s19 8 20 20l12 90z"/>
+    <ellipse cx="190" cy="575" rx="54" ry="20"/>
+    <ellipse cx="242" cy="612" rx="38" ry="15"/>
+  </g>
+</svg>

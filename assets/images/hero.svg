@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Casa portuguesa entre colinas ao entardecer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFE3D2"/>
+      <stop offset=".52" stop-color="#E4C9A6"/>
+      <stop offset="1" stop-color="#C99870"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FBE9C7" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#F2D09B" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#F2D09B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#567C77"/>
+      <stop offset="1" stop-color="#274F4B"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7C8C75"/>
+      <stop offset="1" stop-color="#4D6359"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D5B50"/>
+      <stop offset="1" stop-color="#1D3B37"/>
+    </linearGradient>
+    <linearGradient id="house" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAF7EF"/>
+      <stop offset="1" stop-color="#DCD3C2"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".09"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1190" cy="315" r="280" fill="url(#sunGlow)"/>
+  <circle cx="1190" cy="315" r="66" fill="#F7DFB4"/>
+
+  <path d="M0 590c150-55 250-145 390-128 135 16 210 96 330 76 120-20 210-98 355-74 160 27 265 92 525 30v506H0Z" fill="#B5A889" opacity=".38"/>
+  <path d="M0 655c180-84 300-164 470-126 170 38 250 98 400 60 150-38 300-120 460-72 90 27 170 60 270 50v433H0Z" fill="url(#hillFar)" opacity=".78"/>
+
+  <rect y="690" width="1600" height="120" fill="url(#sea)"/>
+  <g stroke="#C8D9D2" stroke-width="3" opacity=".35">
+    <path d="M80 728h190M340 742h140M620 724h210M980 748h180M1280 726h190"/>
+  </g>
+  <path d="M0 790c210-70 390-64 580-8 190 56 350 54 540 0 180-51 320-49 480 4v214H0Z" fill="#203F3A"/>
+  <path d="M0 850c230-56 430-38 630 4 210 44 400 34 590-12 150-37 260-32 380 4v154H0Z" fill="url(#hillNear)"/>
+
+  <g opacity=".9">
+    <path d="M1110 632h300v186h-300z" fill="url(#house)"/>
+    <path d="M1080 632l180-108 180 108z" fill="#29443F"/>
+    <path d="M1150 678h58v80h-58zM1298 690h62v56h-62z" fill="#C49A6C" opacity=".85"/>
+    <path d="M1238 700h38v58h-38z" fill="#6B5A48"/>
+    <path d="M1188 782h156v34h-156z" fill="#1E3A35" opacity=".35"/>
+  </g>
+
+  <g fill="#183A3A" opacity=".88">
+    <path d="M875 807l8-118c1-16 12-28 28-28s27 12 28 28l8 118z"/>
+    <path d="M925 807l6-95c1-14 10-24 24-24s23 10 24 24l6 95z"/>
+    <path d="M995 812l7-145c1-18 14-32 32-32s31 14 32 32l7 145z"/>
+    <path d="M1080 812l5-108c1-15 12-27 27-27s26 12 27 27l5 108z"/>
+  </g>
+  <g fill="#28473F" opacity=".9">
+    <ellipse cx="903" cy="660" rx="64" ry="24"/>
+    <ellipse cx="953" cy="685" rx="52" ry="20"/>
+    <ellipse cx="1026" cy="625" rx="74" ry="26"/>
+    <ellipse cx="1112" cy="670" rx="56" ry="21"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="transparent" filter="url(#grain)" opacity=".75"/>
+</svg>
